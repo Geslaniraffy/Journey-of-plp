@@ -728,8 +728,9 @@ html {
 .pblog p{
 	color: white;
   text-indent: 30px;
-  text-align:left;
+  text-align:justify;
   margin-top: 2em;
+  letter-spacing: 1px;
 }
 
 
