@@ -48,11 +48,12 @@
                             <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
                             <div class="nav-box navbar-collapse">
                                 <ul class="navigation-menu nav navbar-nav navbars" id="nav">
-                                    <li><a href="/">Home</a></li>	
+                                    <li><a href="/home">Home</a></li>	
                                     <li><a href="/Blog">Blog</a></li>	
                                     <li><a href="/Comsoc">ComSoc</a></li>
                                     <li><a href="/PLP-SSC">PLP-SSC</a></li>
-									<li><a href="/Faculty">Faculty</a></li>                                     
+									<li><a href="/Faculty">Faculty</a></li>
+									<li><a href="{{ route('logout') }}">Logout</a></li>
                                 </ul>
                             </div>
                         </nav>
