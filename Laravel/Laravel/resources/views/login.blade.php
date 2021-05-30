@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="{{ asset('css/loginSystem.css') }}">
 </head>
     <body>
-        <div class="video">
-            <video autoplay muted loop id="myVideo">
-                <source src="<?php echo url('/'); ?>/images/video-bg.mp4" type="video/mp4">
-            </video>
-        </div>
+        <div class="pre-loader"></div>
+        <video autoplay muted loop id="myVideo">
+            <source src="<?php echo url('/'); ?>/images/video-bg.mp4" type="video/mp4">
+        </video>
         @if (session('error'))
             <script>
                 alert('Invalid Credentials');
@@ -21,7 +20,7 @@
         <div class="main-container">
             <form action="{{ route('login') }}" method="POST">
                 @csrf
-                <h2> Login </h2>
+                <h2> Login to PLP </h2>
                 <input type="text" name="email" placeholder="Email">
                 @error('email')
                     <div class="error-message">

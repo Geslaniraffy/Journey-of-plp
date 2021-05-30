@@ -9,6 +9,10 @@
     
 </head>
     <body>
+        <div class="pre-loader"></div>
+        <video autoplay muted loop id="myVideo">
+            <source src="<?php echo url('/'); ?>/images/video-bg.mp4" type="video/mp4">
+        </video>
         @if (session('sucess'))
             <script>
                 alert('Account Successfully Created');
