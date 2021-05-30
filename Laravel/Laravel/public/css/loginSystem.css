@@ -5,17 +5,21 @@
     font-family: sans-serif;
 }
 
-.video {
-    position: fixed;
+.pre-loader {
+    background-color: #63d471;
     height: 100%;
     width: 100%;
+    position: fixed;
     z-index: -1;
-    background-color: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    /* background-color: linear-gradient(315deg, #63d471 0%, #233329 74%); */
 }
 
-.video video {
+video {
+    position: fixed;
     min-width: 100%; 
     min-height: 100%;
+    z-index: -1;
+    opacity: .75;
 }
 
 .main-container {
@@ -24,11 +28,10 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem;
-    height: 100vh;
 }
 
 form {
-    /* background-color: white; */
+    background-color: #228B22;
     border: 1px solid black;
     border-radius: 10px;
     width: 400px;
@@ -37,6 +40,8 @@ form {
 }
 
 form h2 {
+    color: white;
+    letter-spacing: 2px;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -44,7 +49,7 @@ form h2 {
 form input {
     background-color: transparent;
     width: 100%;
-    color: black;
+    color: white;
     font-size: 1.2rem;
     letter-spacing: 1px;
     padding: 10px;
@@ -56,6 +61,7 @@ form input {
 form button {
     background-color: transparent;
     width: 100%;
+    color: white;
     font-size: 1.2rem;
     letter-spacing: 1px;
     padding: 10px;
@@ -71,8 +77,12 @@ form button:hover {
     box-shadow: 0px 0px 20px #0f0;
 }
 
+::-webkit-input-placeholder {
+    color: white;
+}
+
 .login-option {
-    /* background-color: white; */
+    background-color: #228B22;
     box-shadow: 0px 0px 20px #0f0;
     margin-top: 5rem;
     width: 600px;
@@ -113,6 +123,9 @@ form button:hover {
 }
 
 .error-message {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
     margin: 10px 0;
     color: red;
     letter-spacing: 1px;
