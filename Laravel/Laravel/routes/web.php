@@ -27,7 +27,7 @@ Route::get('/Faculty', function () {
 
 
 Route::get('/', [LoginSystemController::class, 'loginIndex'])->name('login');
-Route::post('/login', [LoginSystemController::class, 'login']);
+Route::post('/', [LoginSystemController::class, 'login']);
 Route::get('/register', [LoginSystemController::class, 'registerIndex'])->name('register');
 Route::post('/register', [LoginSystemController::class, 'storeInformation']);
 
